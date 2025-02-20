@@ -20,7 +20,7 @@ function setscore() {
 
   highscorespan.textContent = highscore;
   
-  if (highscore == null) {
+  if (highscore === null) {
     localStorage.setItem("highscore",1);
   }
   
