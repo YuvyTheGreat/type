@@ -11,6 +11,8 @@ body {
 
 * {
   border: 0px solid red;
+  box-sizing: border-box; /* Include borders in element's total size */
+
 }
 
  #num {
@@ -38,7 +40,7 @@ body {
 
   justify-content: center;
   align-items: center;
-  height: 100% !important;
+  height: 100vh;
   font-size: 30pt;
   
   text-align:center;
