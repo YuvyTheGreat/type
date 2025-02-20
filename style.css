@@ -54,6 +54,7 @@ html, body {
   display: flex; /* Stack the child elements vertically */
   width: 100%;
   min-height: 100%; /* Ensure it takes up at least the full height */
+  border: 8px solid pink;
 }
 
 #game div {
