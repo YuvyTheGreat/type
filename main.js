@@ -39,7 +39,7 @@ const time = document.getElementById("mosttimespan");
 setInterval( function() { 
   
   var delta = Date.now() - start;
-  let timesec = Math.floor(delta / 1000);
+  timesec = Math.floor(delta / 1000);
   time.textContent = (timesec);
   
 }, 500);
