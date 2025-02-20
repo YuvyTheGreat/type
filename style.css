@@ -1,0 +1,35 @@
+body {
+    font-size: 15pt;
+    font-family:fun, courier;
+}
+
+@font-face {
+  font-family: fun;
+  src: url(/FUN.ttf);
+}
+
+* {
+  border: 0px solid red;
+}
+
+ #num {
+   font-family: fun, courier;
+   font-size: 150pt;
+   
+   text-align:center;
+   margin:auto;
+ }
+ 
+ #numdiv{
+  flex-direction:column;
+  display: flex;
+  position: absolute;
+   
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  font-size: 50pt;
+  
+  text-align:center;
+ }
+ 
