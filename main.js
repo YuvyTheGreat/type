@@ -42,4 +42,12 @@ setInterval( function() {
   let timesec = Math.floor(delta / 1000);
   time.textContent = (timesec);
   
-}, 1000);
+}, 500);
+
+const speeddiv = document.getElementById("averagespeed")
+
+setInterval ( function () {
+  let averagespeed = highscore/timesec;
+  speeddiv.textContent = averagespeed;
+}
+,160)
