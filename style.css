@@ -85,8 +85,11 @@ body {
    margin-top: 20px;
    
  }
+footer table {
+  width: 100%; /* Ensure table takes up full width */
+}
 
-
-td {
-  
+footer td {
+  width: 50%; /* Each cell takes up half the space */
+  text-align: center
 }
