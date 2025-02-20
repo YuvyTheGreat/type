@@ -1,0 +1,92 @@
+body {
+    font-size: 15pt;
+    height:100%;
+    font-family:fun, courier;
+}
+
+@font-face {
+  font-family: fun;
+  src: url(/FUN.ttf);
+}
+
+* {
+  border: 2px solid red;
+}
+
+ #num {
+   font-family: fun, courier;
+   font-size: 130pt;
+   
+   text-align:center;
+   margin:auto;
+   text-align:center;
+   display: flex;
+   align-items: center;
+   justify-content: center
+ }
+ 
+ #numdiv .instructions {
+   text-align:center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ #numdiv{
+  flex-direction:column;
+  display: flex;
+   
+  justify-content: center;
+  align-items: center;
+  height: 200%;
+  font-size: 30pt;
+  
+  text-align:center;
+ }
+ 
+ #game {
+  display: flex;
+  width: 100%;
+  height: 100%;
+ }
+ 
+ #game * {
+  width: 33.333%; 
+  border: 0px solid pink;
+ }
+ 
+ #stats p {
+   border-bottom: 4px solid deeppink;
+ }
+ 
+ #game div {
+  text-align: center;
+  border: 8px solid pink;
+}
+ 
+ #game div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ #game #stats {
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .stats {
+   font-size: 25pt;
+ }
+ 
+ footer {
+   width: 100%;
+   border: 8px solid pink;
+   margin-top: 20px;
+   
+ }
+
+
+td {
+  
+}
