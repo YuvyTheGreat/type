@@ -47,7 +47,7 @@ setInterval( function() {
 const speeddiv = document.getElementById("averagespeed")
 
 setInterval ( function () {
-  let averagespeed = highscore/timesec;
+  let averagespeed = numbeR/timesec;
   speeddiv.textContent = averagespeed;
 }
 ,160)
