@@ -44,11 +44,24 @@ body {
   text-align:center;
  }
  
- #game {
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+#game {
   display: flex;
+  flex-direction: column; /* Stack the child elements vertically */
   width: 100%;
-  height: 100%;
- }
+  min-height: 100%; /* Ensure it takes up at least the full height */
+}
+
+#game div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure each section takes full width */
+}
  
  #game * {
   width: 33.333%; 
