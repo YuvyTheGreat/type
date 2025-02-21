@@ -49,6 +49,6 @@ const speeddiv = document.getElementById("averagespeed")
 
 setInterval ( function () {
   let averagespeed = numbeR/timesec;
-  speeddiv.textContent = parseFloat(averagespeed.toFixed);
+  speeddiv.textContent = parseFloat(averagespeed.toFixed(2);
 }
 ,160)
