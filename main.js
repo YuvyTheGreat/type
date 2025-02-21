@@ -36,6 +36,7 @@ setInterval (setscore,1000);
 const start = Date.now(); 
 const time = document.getElementById("mosttimespan");
 
+let timesec;
 setInterval( function() { 
   
   var delta = Date.now() - start;
