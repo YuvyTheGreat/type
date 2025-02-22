@@ -108,3 +108,14 @@ footer td {
   width: 50%; /* Each cell takes up half the space */
   text-align: center
 }
+
+#deposit {
+  width: 90%;
+  border: 4px solid pink;
+  border-radius:5px;
+  
+}
+
+#deposit:hover {
+  background-color:pink;
+}
