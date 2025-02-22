@@ -1,4 +1,11 @@
-let numbeR = 1;
+var numbeR = 1;
+let tempnum = numbeR;
+
+if (localStorage.getItem("track")==='undefined') {
+  localStorage.setItem("bankaccount",0)
+}
+
+localStorage.setItem("track","y")
 
 const pElement = document.getElementById("num");
 const audio = document.getElementById("type");
@@ -15,7 +22,7 @@ audioClone.play();
 
 const highscorespan = document.getElementById("mosttypesspan");
 let highscore = localStorage.getItem("highscore");
-
+ 
 function setscore() {
 
   highscorespan.textContent = highscore;
@@ -45,10 +52,39 @@ setInterval( function() {
   
 }, 500);
 
-const speeddiv = document.getElementById("averagespeed")
+const totalspan = document.getElementById("totaltypes");
 
-setInterval ( function () {
-  let averagespeed = numbeR/timesec;
-  speeddiv.textContent = parseFloat(averagespeed.toFixed(2));
+let bankaccount = localStorage.getItem("bankaccount");
+
+let initialaccount = localStorage.getItem("bankaccount");
+totalspan.textContent = initialaccount
+
+let increase;
+
+function deposit2() {
+
+const intervalId = setInterval (() => {
+    let bankaccount = parseFloat(localStorage.getItem("bankaccount"));
+
+    console.log("working2")
+    
+    bankaccount++;
+    numbeR--;
+    totalspan.textContent = bankaccount;
+    
+    pElement.innerHTML = numbeR;
+    console.log(numbeR);
+  
+    localStorage.setItem("bankaccount", bankaccount);
+    console.log(numbeR, bankaccount);
+  
+    if (numbeR === 0) {
+      clearInterval(intervalId);
+    }
+  
+},50)
+  
 }
-,160)
+
+var ptotal = document.getElementById("total");
+document.getElementById("deposit").addEventListener("click", deposit2);
