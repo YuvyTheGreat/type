@@ -9,6 +9,38 @@ body {
   src: url(/FUN.ttf);
 }
 
+#upgrades div .upgradediv {
+  font-family: fun, Courier;
+  border-top: 8px solid pink;
+  box-sizing: border-box;
+  min-height:45%;
+  
+  width: 90%;
+  background-color:white;
+ 
+ 
+  border: 8px solid pink;
+  text-align: center;
+  margin-top:20px;
+}  
+
+#upgrades, .upgradediv2 {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  
+  min-height:100%;
+}
+
+#upgrades .upgradediv2 {
+  border:0px;
+}
+
+.upgradediv:hover{
+  background-color:pink !important;
+}
+
 * {
   border: 0px solid red;
   box-sizing: border-box; /* Include borders in element's total size */
@@ -17,7 +49,7 @@ body {
 
  #num {
    font-family: fun, courier;
-   font-size: 130pt;
+   font-size: 400%;
    
    text-align:center;
    margin:auto;
@@ -28,6 +60,8 @@ body {
  }
  
  #numdiv .instructions {
+   font-size: 100%;
+   
    text-align:center;
    display: flex;
    align-items: center;
@@ -40,6 +74,7 @@ body {
 
   justify-content: center;
   align-items: center;
+  height: 100vh;
   font-size: 30pt;
   
   text-align:center;
@@ -55,6 +90,30 @@ html, body {
   width: 100%;
   min-height: 100%; /* Ensure it takes up at least the full height */
   border: 8px solid pink;
+}
+#idle {
+  max-height:30%;
+  margin-top: 20px;
+  
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border: 16px solid pink;
+}
+ #idle p {
+   border: 8px solid pink;
+   width:30%;
+   min-height:90% !important;
+   
+   text-align: center;
+   
+   padding:4px;
+   
+ }
+
+#idle p:hover{
+  background-color:pink;
 }
 
 #game div {
@@ -90,7 +149,7 @@ html, body {
  }
  
  .stats {
-   font-size: 25pt;
+   font-size: 150%;
  }
  
  footer {
